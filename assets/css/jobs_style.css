@@ -48,3 +48,176 @@ html, body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  top: 33px;
+  left: 5rem;
+  right: 5rem;
+  position: absolute;
+  z-index: 20;
+}
+
+.nav__logo {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  display: inline-block;
+  width: 84px;
+}
+
+.nav__menu {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+}
+
+.nav__menu ul {
+  text-transform: uppercase;
+}
+
+.nav__menu li {
+  display: inline-block;
+  font-size: 14.2px;
+  letter-spacing: 0;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+#contact {
+  display: inline-block;
+  font-size: 14.2px;
+  letter-spacing: 0;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: 900;
+}
+
+.body_wrapper {
+  text-align: left;
+  width: 100%;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+  padding-top: 3.3rem;
+  padding-bottom: 6.5rem;
+}
+
+
+
+.body_wrapper h3 {
+  font-size: 14px;
+  font-style: italic;
+  color: #1C1C1C;
+  padding-bottom: 0.5rem;
+}
+
+.body_wrapper h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1C1C1C;
+}
+
+.red_dash {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 24px;
+}
+
+.body_wrapper h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.body_wrapper ul {
+  padding-top: 1.5rem;
+  padding-left: 2.8rem;
+  padding-bottom: 2.4rem;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #1C1C1C;
+  list-style: disc;
+}
+
+.body_wrapper p {
+  font-size: 14px;
+  color: #1C1C1C;
+}
+
+#italic {
+  font-style: italic;
+}
+
+.futter {
+  display: block;
+  position: relative;
+  margin-top: 0;
+}
+
+.futter__container {
+  position: absolute;
+  right: 5.5rem;
+  top: 1.2rem;
+}
+
+.futter__container__linkedin_ico {
+  display: inline-block;
+}
+
+.futter__container__linkedin_ico img {
+  width: 11px;
+}
+
+.futter__container__twitt_ico {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
+
+.futter__container__twitt_ico img {
+  width: 13px;
+}
+
+.futter__container__webpage {
+  display: inline-block;
+  color: #616161;
+  letter-spacing: 0.6px;
+  font-size: 10px;
+  margin-left: 1rem;
+}
+
+.div_copyright {
+  display: block;
+  background-color: #1e1e1e;
+  color: #5f5f5f;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5.5rem;
+}
+
+.copyrigtxt2 {
+    display: block;
+    font-size: 10px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+}

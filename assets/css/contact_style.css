@@ -47,4 +47,366 @@ a, a:hover, a:focus, a:active {
 html, body{
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  top: 33px;
+  left: 5rem;
+  right: 5rem;
+  position: absolute;
+  z-index: 20;
+}
+
+.nav__logo {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  display: inline-block;
+  width: 84px;
+}
+
+.nav__menu {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+}
+
+.nav__menu ul {
+  text-transform: uppercase;
+}
+
+.nav__menu li {
+  display: inline-block;
+  font-size: 14.2px;
+  letter-spacing: 0;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+#contact {
+  display: inline-block;
+  font-size: 14.2px;
+  letter-spacing: 0;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: 900;
+}
+
+.body_wrapper {
+  max-width: 1280px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 6.1rem;
+  padding-bottom: 6.1rem;
+}
+
+.contact_form {
+  position: relative;
+  display: inline-block;
+  background-color: #F8F8F8;
+  width: 49.5%;
+  vertical-align: top;
+}
+
+.contact_form__left {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  vertical-align: top;
+  border-right: 2px solid #919191;
+}
+
+.contact_form__left h1 {
+  display: block;
+  color: #1C1C1C;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.contact_form__left img {
+  display: block;
+  padding: 0.5rem 0;
+  width: 24px;
+}
+
+form {
+  padding-right: 1rem;
+}
+
+input {
+  background-color: #F8F8F8;
+  font-size: 12px;
+  color: #919191;
+
+}
+
+.contact_form__left__name {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #919191;
+  font-weight: 300;
+  font-style: italic;
+  background-color: #F8F8F8;
+  padding-bottom: 2rem;
+  outline-style: none;
+  padding-top: 0.7rem;
+}
+
+.contact_form__left__email {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #919191;
+  font-weight: 300;
+  font-style: italic;
+  background-color: #F8F8F8;
+  padding-bottom: 2rem;
+  padding-top: 1.7rem;
+  outline-style: none;
+}
+
+.checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid #C41230;
+}
+
+.checkbox_container input:checked ~ .checkmark {
+  background-color: #C41230;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox_container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact_form__right {
+  display: inline-block;
+  text-align: left;
+  margin-top: 2rem;
+  width: 49%;
+}
+
+.contact_form__right form {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.contact_form__right label {
+  font-style: italic;
+  font-size: 12px;
+  color: #919191;
+  font-weight: 300;
+  padding-top: 0;
+}
+
+.contact_form__right textarea {
+  width: 95%;
+  border: none;
+  font-size: 14px;
+  background-color: #F8F8F8;
+  outline-style: none;
+  padding-top: 1rem;
+  padding-left: 0;
+}
+
+.contact_form__right textarea::placeholder {
+  color: black;
+}
+
+.contact_form__right__submit {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: #C41230;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+
+.contact_information {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.contact_information__wrapper1 {
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+
+.contact_information h1 {
+  font-size: 16px;
+  font-weight: 900;
+  color: #1C1C1C;
+}
+
+.contact_information__red_dash {
+  display: block;
+  width: 29px;
+  padding: 0.5rem 0;
+}
+
+.contact_information p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1C1C1C;
+  line-height: 1.5;
+}
+
+
+.contact_information__dubai {
+  display: inline-block;
+}
+
+.contact_information__beirut {
+  float: right;
+}
+
+.contact_information__wrapper2 {
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+}
+
+.contact_information__belgrade {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.follow_us {
+  float:right;
+  padding-right: 5.5rem;
+}
+
+.follow_us__twittico {
+  width: 20px;
+  display: inline-block;
+}
+
+.follow_us__fbico {
+  width: 20px;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+
+.futter {
+  display: block;
+  position: relative;
+  margin-top: 0;
+}
+
+.futter__container {
+  position: absolute;
+  right: 5.5rem;
+  top: 1.2rem;
+}
+
+.futter__container__linkedin_ico {
+  display: inline-block;
+}
+
+.futter__container__linkedin_ico img {
+  width: 11px;
+}
+
+.futter__container__twitt_ico {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
+
+.futter__container__twitt_ico img {
+  width: 13px;
+}
+
+.futter__container__webpage {
+  display: inline-block;
+  color: #616161;
+  letter-spacing: 0.6px;
+  font-size: 10px;
+  margin-left: 1rem;
+}
+
+.div_copyright {
+  display: block;
+  background-color: #1e1e1e;
+  color: #5f5f5f;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5.5rem;
+}
+
+.copyrigtxt2 {
+    display: block;
+    font-size: 10px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
 }
