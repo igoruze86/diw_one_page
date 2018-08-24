@@ -59,7 +59,7 @@
 					<form>
 						<label for="message">Poruka</label>
 						<textarea rows="10" type="message" name="message" placeholder="Pisite poruku ovde..." class="contact_form__right__message"></textarea>
-						<input type="submit" name="submit" value="posaljite poruku" class="contact_form__right__submit">
+						<input type="submit" name="submit" value="posaljite poruku" class="contact_form__right__submit" onclick="ga ('send', 'event', [contact], [click], [submit]);">
 					</form>
 				</div>
 			</div>
