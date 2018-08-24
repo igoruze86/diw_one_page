@@ -289,8 +289,12 @@ input {
   background-color: #C41230;
   color: #FFFFFF;
   padding: 15px;
+  cursor: pointer;
 }
 
+.contact_form__right__submit:hover {
+  background-color: #790c1f;
+}
 
 .contact_information {
   display: inline-block;
