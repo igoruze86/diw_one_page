@@ -1261,6 +1261,11 @@ header {
     letter-spacing: 1.2px;
   }
 }
+
+.btn_load button:hover {
+  background-color: rgba(215,215,215,1)
+}
+
 /* JOBS END */
 
 
