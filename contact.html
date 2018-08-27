@@ -57,7 +57,7 @@
 					<form>
 						<label for="message">Poruka</label>
 						<textarea rows="10" type="message" name="message" placeholder="Pisite poruku ovde..." class="contact_form__right__message"></textarea>
-						<input type="submit" name="submit" value="posaljite poruku" class="contact_form__right__submit" onsubmit="_gaq.push(['_trackEvent', 'Contact_page', 'Submit', 'Submit_btn']);">
+						<button type="submit" name="submit" class="contact_form__right__submit" onClick="ga('send', 'event', 'ContactSubmit', 'Click', 'SubmitBtn', '0');">posaljite poruku</button>
 					</form>
 				</div>
 			</div>
