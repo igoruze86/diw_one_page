@@ -434,8 +434,9 @@ input {
 .checkbox_container {
   display: block;
   position: relative;
-  padding-left: 3.5vw;
-  padding-top: 4vw;
+  width: 11vw;
+  margin-left: 3.5vw;
+  margin-top: 4vw;
   cursor: pointer;
   font-size: 1.8vw;
   -webkit-user-select: none;
@@ -445,16 +446,20 @@ input {
 }
 @media (max-width: 768px) {
   .checkbox_container {
-    padding-left: 6.5vw;
-    padding-top: 8.3vw;
+    width: 22vw;
     font-size: 3.5vw;
+    margin-top: 8.3vw;
+    margin-left: 6.5vw;
     letter-spacing: 0.7px;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 @media (min-width: 1800px) {
   .checkbox_container {
-    padding-left: 2.1vw;
-    padding-top: 2.3vw;
+    width: 7vw;
+    margin-left: 2.1vw;
+    margin-top: 2.3vw;
     font-size: 1.1vw;
   }
 }
@@ -464,12 +469,20 @@ input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+  top: 0vw;
+  left: -3.5vw;
+}
+@media (max-width: 768px) {
+  .checkbox_container  input {
+    top: 0;
+    left: -7vw;
+  }
 }
 
 .checkmark {
   position: absolute;
-  top: 4vw;
-  left: 0.3vw;
+  top: 0vw;
+  left: -3.5vw;
   height: 2vw;
   width: 2vw;
   background-color: white;
@@ -478,17 +491,19 @@ input {
 }
 @media (max-width: 768px) {
   .checkmark {
-    top: 8vw;
-    left: 0vw;
+    top: 0vw;
+    left: -7vw;
     height: 4.2vw;
     width: 4.2vw;
+    border: 1.5px solid #C41230;
   }
 }
 @media (min-width: 1800px) {
   .checkmark {
-    top: 2.4vw;
+    top: 0vw;
     height: 1.3vw;
     width: 1.3vw;
+    left: -2.1vw;
   }
 }
 
@@ -507,12 +522,12 @@ input {
 }
 
 .checkbox_container .checkmark:after {
-  left: 0.7vw;
-  top: 0.2vw;
+  left: 0.6vw;
+  top: 0.1vw;
   width: 0.4vw;
   height: 0.9vw;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 4px 4px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -520,9 +535,10 @@ input {
 @media (max-width: 768px) {
   .checkbox_container .checkmark:after {
     left: 1.1vw;
-    top: 0.5vw;
-    width: 1vw;
+    top: 0.3vw;
+    width: 0.8vw;
     height: 1.8vw;
+    border-width: 0 0.7vw 0.7vw 0;
   }
 }
 @media (min-width: 1800px) {
@@ -854,8 +870,8 @@ input {
 
 .futter__container {
   position: absolute;
-  right: 5rem;
-  top: 3.3rem;
+  right: 5.6vw;
+  top: 3.7vw;
 }
 @media (max-width: 1024px) {
   .futter__container {
@@ -866,7 +882,7 @@ input {
 }
 @media (min-width: 1800px) {
   .futter__container {
-    right: 10rem;
+    right: 6.3vw;
   }
 }
 
@@ -897,8 +913,8 @@ input {
   display: inline-block;
   color: #616161;
   letter-spacing: 1.2px;
-  font-size: 1.1rem;
-  margin-left: 8.4rem;
+  font-size: 1.22vw;
+  margin-left: 9.32vw;
 }
 @media (max-width: 1024px) {
   .futter__container__webpage {
@@ -914,9 +930,9 @@ input {
   display: block;
   background-color: #1e1e1e;
   color: #5f5f5f;
-  padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
-  padding-left: 5.1rem;
+  padding-top: 3.9vw;
+  padding-bottom: 3.7vw;
+  padding-left: 5.7vw;
 }
 @media (max-width: 1024px) {
   .div_copyright {
@@ -929,7 +945,7 @@ input {
 }
 @media (min-width: 1800px) {
   .div_copyright {
-    padding-left: 10.1rem;
+    padding-left: 6.3vw;
   }
 }
 
