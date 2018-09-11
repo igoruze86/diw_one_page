@@ -432,9 +432,8 @@ input {
 }
 
 .checkbox_container {
-  display: block;
+  display: inline-block;
   position: relative;
-  width: 11vw;
   margin-left: 3.5vw;
   margin-top: 4vw;
   cursor: pointer;
@@ -446,7 +445,6 @@ input {
 }
 @media (max-width: 768px) {
   .checkbox_container {
-    width: 22vw;
     font-size: 3.5vw;
     margin-top: 8.3vw;
     margin-left: 6.5vw;
@@ -457,7 +455,6 @@ input {
 }
 @media (min-width: 1800px) {
   .checkbox_container {
-    width: 7vw;
     margin-left: 2.1vw;
     margin-top: 2.3vw;
     font-size: 1.1vw;
