@@ -912,7 +912,7 @@ header {
   }
 }
 
-.position_developer button {
+.position_developer_button {
   display: none;
   background-color: white;
   border: solid 2px #222222;
@@ -922,10 +922,9 @@ header {
   font-weight: 300;
   border-radius: 1px;
   padding: 1.1vw 3.6vw;
-  /* outline: none; */
 }
 @media (min-width: 641px) {
-  .position_developer button {
+  .position_developer_button {
     display: inline-block;
     right: 9.3vw;
     top: 10.9vw;
@@ -933,7 +932,7 @@ header {
   }
 }
 @media (min-width: 1025px) {
-  .position_developer button {
+  .position_developer_button {
     font-size: 1vw;
     padding: 0.9vw 2.6vw;
     letter-spacing: 1.5px;
@@ -943,7 +942,7 @@ header {
   }
 }
 
-.position_developer button:hover {
+.position_developer_button:hover {
   background-color: #ededed;
   cursor: pointer;
 }
@@ -1068,7 +1067,7 @@ header {
   }
 }
 
-.position_pm button {
+.position_pm_button {
   display: none;
   background-color: #222222;
   border: solid 2px #ededed;
@@ -1078,10 +1077,9 @@ header {
   font-weight: 300;
   border-radius: 1px;
   padding: 1.2vw 3.6vw;
-  /* outline: none; */
 }
 @media (min-width: 641px) {
-  .position_pm button {
+  .position_pm_button {
     display: inline-block;
     right: 9.3vw;
     top: 7.8vw;
@@ -1089,7 +1087,7 @@ header {
   }
 }
 @media (min-width: 1025px) {
-  .position_pm button {
+  .position_pm_button {
     font-size: 1vw;
     padding: 0.9vw 2.6vw;
     letter-spacing: 1.5px;
@@ -1099,7 +1097,7 @@ header {
   }
 }
 
-.position_pm button:hover {
+.position_pm_button:hover {
   background-color: #666363;
   cursor: pointer;
 }
@@ -1183,7 +1181,7 @@ header {
   }
 }
 
-.position_design button {
+.position_design_button {
   display: none;
   background-color: white;
   border: solid 2px #222222;
@@ -1193,10 +1191,9 @@ header {
   font-weight: 300;
   border-radius: 1px;
   padding: 1.2vw 3.6vw;
-  /* outline: none; */
 }
 @media (min-width: 641px) {
-  .position_design button {
+  .position_design_button {
     display: inline-block;
     right: 9.3vw;
     top: 7.8vw;
@@ -1204,7 +1201,7 @@ header {
   }
 }
 @media (min-width: 1025px) {
-  .position_design button {
+  .position_design_button {
     font-size: 1vw;
     padding: 0.9vw 2.6vw;
     letter-spacing: 1.5px;
@@ -1214,12 +1211,12 @@ header {
   }
 }
 
-.position_design button:hover {
+.position_design_button:hover {
   background-color: #ededed;
   cursor: pointer;
 }
 
-.btn_load {
+.div_btn_load {
   width: 100%;
   text-align: center;
   background-color: inherit;
@@ -1227,19 +1224,19 @@ header {
   padding-bottom: 24.1vw;
 }
 @media (min-width: 641px) {
-  .btn_load {
+  .div_btn_load {
     padding-top: 6.4vw;
     padding-bottom: 13.5vw;
   }
 }
 @media (min-width: 1025px) {
-  .btn_load {
+  .div_btn_load {
     padding-top: 6.4vw;
     padding-bottom: 9.6vw;
   }
 }
 
-.btn_load button {
+.button_load {
   background-color: rgba(215,215,215,0.50);
   border: none;
   color: #333333;
@@ -1247,30 +1244,28 @@ header {
   font-weight: 300;
   letter-spacing: 1.8px;
   cursor: pointer;
-  /* outline: none; */
   padding: 5.5vw 8.6vw 5vw 6.5vw;
   font-size: 4.4vw;
 }
 @media (min-width: 641px) {
-  .btn_load button {
+  .button_load {
     padding: 1.7vw 2vw 1.7vw 1.7vw;
     font-size: 1.4vw;
   }
 }
 @media (min-width: 1025px) {
-  .btn_load button {
+  .button_load {
     padding: 1.3vw 2vw 1.3vw 1.7vw;
     font-size: 1vw;
     letter-spacing: 1.2px;
   }
 }
 
-.btn_load button:hover {
+.button_load:hover {
   background-color: rgba(215,215,215,1)
 }
 
 /* JOBS END */
-
 
 .div_about {
   display: block;
