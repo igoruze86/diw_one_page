@@ -64,20 +64,19 @@
 				<div class="contact_form__left">
 					<h1>Kontakt</h1>
 					<img src="assets/img/red_dash.png">
-					<form>
-						<input type="text" placeholder="Ime" class="contact_form__left__name">
-						<input type="text" placeholder="Email" class="contact_form__left__email">
+					<form onsubmit="return validateForm()">
+						<input type="text" id="ime" name="ime" placeholder="Ime" class="name">
+						<input type="text" id="email" name="email" placeholder="Email" class="email">
 						<label class="checkbox_container">nisam robot
-							<input type="checkbox">
+							<input type="checkbox" id="checkbox" name="checkbox">
 							<span class="checkmark"></span>
 						</label>
-					</form>
-				</div>
-				<div class="contact_form__right">
-					<form>
+					</div>
+					<div class="contact_form__right">
 						<label for="message">Poruka</label>
-						<textarea rows="10" type="message" name="message" placeholder="Pisite poruku ovde..." class="contact_form__right__message"></textarea>
-						<button type="submit" name="submit" class="contact_form__right__submit">posaljite poruku</button>
+						<textarea rows="10" type="message" id="poruka" name="message" placeholder="Pisite poruku ovde..." class="message"></textarea>
+						<input type="submit" value="posaljite poruku" class="submit">
+						<p id="error_feedback"></p>
 					</form>
 				</div>
 			</div>
@@ -121,16 +120,16 @@
 			</div>
 		</div>
 
-		<div class="futter">
-			<div class="futter__container">
-				<div class="futter__container__twitt_ico">
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__container__twitt_ico">
 					<a href="https://twitter.com/diwaneeserbia" target="_blank"><img src=assets/img/twittico_mobile.png></a>
 				</div>
-				<div class="futter__container__linkedin_ico">
+				<div class="footer__container__linkedin_ico">
 					<a href="https://www.linkedin.com/company/diwanee" target="_blank"><img src=assets/img/linkdin_icon_mobile.png></a>
 				</div>
 
-				<div class="futter__container__webpage">
+				<div class="footer__container__webpage">
 					<a href="http://www.diwanee.com/" target="_blank">www.diwanee.com</a>
 				</div>
 			</div>

@@ -408,59 +408,59 @@ header {
   }
 }
 
-.futter {
+.footer {
   display: block;
   position: relative;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
-  .futter {
+  .footer {
     text-align: center;
   }
 }
 
-.futter__container {
+.footer__container {
   position: absolute;
   right: 5rem;
   top: 3.3rem;
 }
 @media (max-width: 1024px) {
-  .futter__container {
+  .footer__container {
     width: 100%;
     right: 0;
     top: 9.5vw;
   }
 }
 @media (min-width: 1800px) {
-  .futter__container {
+  .footer__container {
     right: 10rem;
   }
 }
 
-.futter__container__linkedin_ico {
+.footer__container__linkedin_ico {
   display: inline-block;
 }
 
-.futter__container__linkedin_ico img {
+.footer__container__linkedin_ico img {
   width: 23px;
   margin-left: 1.3rem;
 }
 @media (max-width: 1024px) {
-  .futter__container__linkedin_ico img {
+  .footer__container__linkedin_ico img {
     margin-left: 1.7vw;
   }
 }
 
-.futter__container__twitt_ico {
+.footer__container__twitt_ico {
   display: inline-block;
   margin-left: 0;
 }
 
-.futter__container__twitt_ico img {
+.footer__container__twitt_ico img {
   width: 26px;
 }
 
-.futter__container__webpage {
+.footer__container__webpage {
   display: inline-block;
   color: #616161;
   letter-spacing: 1.2px;
@@ -468,7 +468,7 @@ header {
   margin-left: 8.4rem;
 }
 @media (max-width: 1024px) {
-  .futter__container__webpage {
+  .footer__container__webpage {
     display: block;
     margin-left: 0;
     text-align: center;
