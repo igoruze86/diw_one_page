@@ -64,7 +64,7 @@
 				<div class="contact_form__left">
 					<h1>Kontakt</h1>
 					<img src="assets/img/red_dash.png">
-					<form onsubmit="return validateForm()">
+					<form>
 						<input type="text" id="ime" name="ime" placeholder="Ime" class="name">
 						<input type="text" id="email" name="email" placeholder="Email" class="email">
 						<label class="checkbox_container">nisam robot
@@ -75,8 +75,9 @@
 					<div class="contact_form__right">
 						<label for="message">Poruka</label>
 						<textarea rows="10" type="message" id="poruka" name="message" placeholder="Pisite poruku ovde..." class="message"></textarea>
-						<input type="submit" value="posaljite poruku" class="submit">
+						<button id="submit" class="submit">posaljite poruku</button>
 						<p id="error_feedback"></p>
+						<p id="success_feedback"></p>
 					</form>
 				</div>
 			</div>

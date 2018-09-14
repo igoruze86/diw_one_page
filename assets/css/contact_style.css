@@ -561,7 +561,7 @@ input {
 }
 @media (min-width: 1800px) {
   .contact_form__right {
-    margin-top: 0;
+    margin-top: 1.5vw;
   }
 }
 
@@ -989,6 +989,34 @@ input {
 }
 @media (min-width: 1800px) {
   #error_feedback {
+    left: 3vw;
+    bottom: 1vw;
+    font-size: 1.1vw;
+  }
+}
+
+/* SUCCESS MESSAGE */
+
+#success_feedback {
+  position: absolute;
+  display: block;
+  left: 3vw;
+  bottom: 1vw;
+  color: green;
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  #success_feedback {
+    left: 3vw;
+    right: 3vw;
+    bottom: 60vw;
+    font-size: 3.7vw;
+
+  }
+}
+@media (min-width: 1800px) {
+  #success_feedback {
     left: 3vw;
     bottom: 1vw;
     font-size: 1.1vw;

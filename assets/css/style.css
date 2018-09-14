@@ -804,9 +804,9 @@ header {
 }
 
 .position_developer h1 {
-  display: block;
-  padding-top: 8.7vw;
-  padding-bottom: 3.8vw;
+  display: inline-block;
+  margin-top: 8.7vw;
+  margin-bottom: 3.8vw;
   font-size: 5.6vw;
   letter-spacing: 0;
   color: black;
@@ -815,23 +815,23 @@ header {
 }
 @media (min-width: 641px) {
   .position_developer h1 {
-    padding-top: 5.6vw;
-    padding-bottom: 1.6vw;
+    margin-top: 5.6vw;
+    margin-bottom: 1.6vw;
     font-size: 2vw;
     letter-spacing: -0.2px;
   }
 }
 @media (min-width: 1025px) {
   .position_developer h1 {
-    padding-top: 5.5vw;
-    padding-bottom: 1.3vw;
+    margin-top: 5.5vw;
+    margin-bottom: 1.3vw;
     font-size: 1.3vw;
     letter-spacing: 0.7px;
   }
 }
 
 .position_developer p {
-  display: inline-block;
+  display: block;
   font-weight: 300;
   color: #222222;
   font-size: 4.7vw;
@@ -1125,9 +1125,9 @@ header {
 }
 
 .position_design h1 {
-  display: block;
-  padding-top: 5vw;
-  padding-bottom: 4.3vw;
+  display: inline-block;
+  margin-top: 5vw;
+  margin-bottom: 4.3vw;
   font-size: 5.5vw;
   letter-spacing: 0;
   color: black;
@@ -1137,15 +1137,15 @@ header {
 @media (min-width: 641px) {
   .position_design h1 {
     letter-spacing: -0.2px;
-    padding-top: 2.4vw;
-    padding-bottom: 1.7vw;
+    margin-top: 2.4vw;
+    margin-bottom: 1.7vw;
     font-size: 2vw;
   }
 }
 @media (min-width: 1025px) {
   .position_design h1 {
-    padding-top: 3.1vw;
-    padding-bottom: 1.2vw;
+    margin-top: 3.1vw;
+    margin-bottom: 1.2vw;
     font-size: 1.3vw;
     letter-spacing: 0.7px;
   }
@@ -1163,7 +1163,6 @@ header {
 }
 @media (min-width: 641px) {
   .position_design p {
-    display: inline-block;
     font-size: 1.8vw;
     letter-spacing: 0.1px;
     line-height: 1.6;
