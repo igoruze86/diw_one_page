@@ -289,10 +289,12 @@ header {
 }
 
 .contact_form__left {
+  position: relative;
   width: 48.7%;
   display: inline-block;
   text-align: left;
   margin-top: 2.6vw;
+  padding-right: 3vw;
   padding-left: 3vw;
   padding-bottom: 7.9vw;
   vertical-align: top;
@@ -306,6 +308,7 @@ header {
     border-bottom: 2px solid #919191;
     margin-top: 0;
     padding-top: 5.6vw;
+    padding-right: 8.3vw;
     padding-left: 8.3vw;
     padding-bottom: 16vw;
   }
@@ -313,6 +316,7 @@ header {
 @media (min-width: 1800px) {
   .contact_form__left {
     margin-top: 1.5vw;
+    padding-right: 1.8vw;
     padding-left: 1.8vw;
     padding-bottom: 4.8vw;
   }
@@ -352,7 +356,7 @@ header {
   }
 }
 
-form {
+/* form {
   padding-right: 8.1vw;
 }
 @media (max-width: 768px) {
@@ -365,7 +369,7 @@ form {
   form {
     padding-right: 5vw;
   }
-}
+} */
 
 input {
   background-color: #F8F8F8;
@@ -556,7 +560,7 @@ input {
   .contact_form__right {
     display: block;
     width: 100%;
-    margin-top: 0;
+    margin-top: 3vw;
   }
 }
 @media (min-width: 1800px) {
@@ -946,7 +950,6 @@ input {
   }
 }
 
-
 .copyrigtxt2 {
   display: block;
   font-size: 1.3vw;
@@ -965,60 +968,39 @@ input {
   }
 }
 
-/* ERROR MESSAGES */
+/* SUBMIT FEEDBACK MESSAGES */
 
-#error_feedback {
+#feedback {
   position: absolute;
-  display: block;
-  left: 3vw;
+  display: none;
+  left: 1.5vw;
+  right: 40.5vw;
   bottom: 1vw;
-  color: red;
+  background-color: red;
+  padding: 15px 5px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  color: white;
+  text-align: center;
   font-size: 2vw;
   letter-spacing: 1px;
   font-weight: 300;
   font-style: italic;
 }
 @media (max-width: 768px) {
-  #error_feedback {
-    left: 3vw;
-    right: 3vw;
-    bottom: 60vw;
-    font-size: 3.7vw;
-
+  #feedback {
+    left: 1.5vw;
+    right: 1.5vw;
+    bottom: 63vw;
+    font-size: 4vw;
   }
 }
+
 @media (min-width: 1800px) {
-  #error_feedback {
-    left: 3vw;
+  #feedback {
+    left: 1.5vw;
+    right: 25.5vw;
     bottom: 1vw;
-    font-size: 1.1vw;
-  }
-}
-
-/* SUCCESS MESSAGE */
-
-#success_feedback {
-  position: absolute;
-  display: block;
-  left: 3vw;
-  bottom: 1vw;
-  color: green;
-  font-size: 2vw;
-  letter-spacing: 1px;
-}
-@media (max-width: 768px) {
-  #success_feedback {
-    left: 3vw;
-    right: 3vw;
-    bottom: 60vw;
-    font-size: 3.7vw;
-
-  }
-}
-@media (min-width: 1800px) {
-  #success_feedback {
-    left: 3vw;
-    bottom: 1vw;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
   }
 }

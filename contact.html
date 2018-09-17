@@ -26,7 +26,7 @@
 		<header>
 			<div class="banner">
 			<img src="assets/img/desk_header.png">
-		</div>
+			</div>
 			<nav class="nav">
 				<div class="nav__logo">
 					<a href="index.html" title="Home"><img src="assets/img/diw_logo.png" alt="Logo" class="logo"></a>
@@ -50,40 +50,32 @@
 								<p>pratite nas</p>
 								<a href="https://www.facebook.com/diwaneeserbia/" target="_blank"><img src="assets/img/fbico.png" class="fbico_nav"></a>
 								<a href="https://twitter.com/diwaneeserbia" target="_blank"><img src="assets/img/twittico.png" class="twittico_nav"></a>
-
 							</div>
 						</li>
 						</ul>
 				</div>
-
 		</header>
 
 		<div class="body_wrapper">
-
 			<div class="contact_form">
-				<div class="contact_form__left">
-					<h1>Kontakt</h1>
-					<img src="assets/img/red_dash.png">
-					<form>
-						<input type="text" id="ime" name="ime" placeholder="Ime" class="name">
-						<input type="text" id="email" name="email" placeholder="Email" class="email">
-						<label class="checkbox_container">nisam robot
-							<input type="checkbox" id="checkbox" name="checkbox">
-							<span class="checkmark"></span>
-						</label>
-					</form>
+				<form>
+					<div class="contact_form__left">
+						<h1>Kontakt</h1>
+						<img src="assets/img/red_dash.png">
+							<input type="text" id="ime" name="ime" placeholder="Ime" class="name">
+							<input type="text" id="email" name="email" placeholder="Email" class="email">
+							<label class="checkbox_container">nisam robot
+								<input type="checkbox" id="checkbox" name="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="contact_form__right">
+							<label for="message">Poruka</label>
+							<textarea rows="10" type="message" id="poruka" name="message" placeholder="Pisite poruku ovde..." class="message"></textarea>
+							<input type="submit" id="submit" value="posaljite poruku" class="submit">
 					</div>
-					<div class="contact_form__right">
-					<form>
-						<label for="message">Poruka</label>
-						<textarea rows="10" type="message" id="poruka" name="message" placeholder="Pisite poruku ovde..." class="message"></textarea>
-						<input type="submit" id="submit" value="posaljite poruku" class="submit">
-						<p id="error_feedback"></p>
-						<p id="success_feedback"></p>
-					</form>
-
-
-				</div>
+					<div id="feedback"></div>
+				</form>
 			</div>
 
 			<div class="contact_information">
