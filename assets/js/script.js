@@ -20,6 +20,7 @@ function validateForm() {
       var msg = $('#feedback');
 
       if (ime == "") {
+          document.getElementById('feedback').style.background = 'red';
           msg.fadeOut(1);
           msg.slideToggle(80, function(){
           feedback += 'Polje "Ime" je obavezno!';
