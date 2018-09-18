@@ -64,19 +64,21 @@
 						<img src="assets/img/red_dash.png">
 							<input type="text" id="ime" name="ime" placeholder="Ime" class="name">
 							<input type="text" id="email" name="email" placeholder="Email" class="email">
-							<label class="checkbox_container">nisam robot
+							<label id="boxlabel" class="checkbox_container">nisam robot
 								<input type="checkbox" id="checkbox" name="checkbox">
 								<span class="checkmark"></span>
 							</label>
 						</div>
 						<div class="contact_form__right">
-							<label for="message">Poruka</label>
+							<label id="msglabel" for="message">Poruka</label>
 							<textarea rows="10" type="message" id="poruka" name="message" placeholder="Pisite poruku ovde..." class="message"></textarea>
 							<input type="submit" id="submit" value="posaljite poruku" class="submit">
 					</div>
-					<div id="feedback"></div>
+
 				</form>
+
 			</div>
+			<div id="feedback"></div>
 
 			<div class="contact_information">
 				<div class="contact_information__wrapper1">

@@ -18,80 +18,83 @@ function validateForm() {
       var checkbox = document.getElementById("checkbox").checked;
       var poruka = document.getElementById("poruka").value;
       var msg = $('#feedback');
+      var error = 'Proverite da li ste pravilno popunili sva polja, pa pokusajte ponovo!';
+      var success = 'Poruka je uspesno poslata!';
+      var boxlabel = $('boxlabel');
 
       if (ime == "") {
-          document.getElementById('feedback').style.background = 'red';
-          msg.fadeOut(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Polje "Ime" je obavezno!';
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
-          document.getElementById('feedback').style.display = 'block';
           document.getElementById('ime').style.borderColor = 'red';
-          return false;
-          })
-        }
-        else if (email == '') {
-          document.getElementById('feedback').style.background = 'red';
-          msg.hide(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Polje "Email" je obavezno!';
+          msg.slideDown(300);
+        })
+      }
+      else if (email == '') {
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
           document.getElementById('email').style.borderColor = 'red';
-          return false;
-          })
-        }
-        else if (at < 1 || dot < 1) {
-          document.getElementById('feedback').style.background = 'red';
-          msg.hide(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Email adresa nije validna!';
-          document.getElementById('feedback').innerHTML = feedback;
-          document.getElementById('feedback').style.background = 'red';
-          document.getElementById('email').style.borderColor = 'red';
-          return false;
-          })
-        }
-        else if (at > dot) {
-          document.getElementById('feedback').style.background = 'red';
-          msg.hide(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Email adresa nije validna!';
+          msg.slideDown(300);
+        })
+      }
+      else if (at < 1 || dot < 1) {
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
           document.getElementById('email').style.borderColor = 'red';
-          return false;
-          })
-        }
-        else if (checkbox == false) {
-          document.getElementById('feedback').style.background = 'red';
-          msg.hide(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Polje "nisam robot" nije oznaceno!';
+          msg.slideDown(300);
+        })
+      }
+      else if (at > dot) {
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
-          return false;
-          })
-        }
-        else if (poruka == '') {
-          document.getElementById('feedback').style.background = 'red';
-          msg.hide(1);
-          msg.slideToggle(80, function(){
-          feedback += 'Polje "Poruka" je obavezno!';
+          document.getElementById('email').style.borderColor = 'red';
+          msg.slideDown(300);
+        })
+      }
+      else if (checkbox == false) {
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
-          document.getElementById('poruka').style.borderColor = 'red';
-          return false;
-          })
-        }
-        else if (feedback == '') {
-          document.getElementById('feedback').style.background = '#54b757';
-          msg.hide(1);
-          msg.slideToggle( 80, function() {
-          feedback += 'Forma je uspesno poslata!';
+          document.getElementById('boxlabel').style.color = 'red';
+          msg.slideDown(300);
+        })
+      }
+      else if (poruka == '') {
+        msg.slideUp(300, function(){
+          msg.removeClass("success_msg");
+          msg.addClass("error_msg");
+          feedback += error;
           document.getElementById('feedback').innerHTML = feedback;
-          setTimeout(function(){
-          msg.fadeOut(300);
-          },3000)
-          return false;
-          });
-        }
+          document.getElementById('msglabel').style.color = 'red';
+          msg.slideDown(300);
+        })
+      }
+      else if (feedback == '') {
+        msg.slideUp(300, function(){
+          msg.removeClass("error_msg");
+          msg.addClass("success_msg");
+          feedback += success;
+          document.getElementById('feedback').innerHTML = feedback;
+          document.getElementById('ime').style.borderColor = '#919191';
+          document.getElementById('email').style.borderColor = '#919191';
+          document.getElementById('boxlabel').style.color = 'black';
+          document.getElementById('msglabel').style.color = '#919191';
+          msg.slideToggle(300);
+        })
+      }
     })
   }
 

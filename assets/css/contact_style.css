@@ -970,37 +970,26 @@ input {
 
 /* SUBMIT FEEDBACK MESSAGES */
 
-#feedback {
-  position: absolute;
-  display: none;
-  left: 1.5vw;
-  right: 40.5vw;
-  bottom: 1vw;
-  background-color: red;
+.error_msg {
+  display: block;
+  margin-top: 2vw;
   padding: 15px 5px;
-  border-radius: 10px;
+  background-color: red;
   box-shadow: 5px 10px 18px #888888;
   color: white;
   text-align: center;
-  font-size: 2vw;
-  letter-spacing: 1px;
-  font-weight: 300;
-  font-style: italic;
-}
-@media (max-width: 768px) {
-  #feedback {
-    left: 1.5vw;
-    right: 1.5vw;
-    bottom: 63vw;
-    font-size: 4vw;
-  }
+  font-size: 1.5vw;
+  letter-spacing: 2px;
 }
 
-@media (min-width: 1800px) {
-  #feedback {
-    left: 1.5vw;
-    right: 25.5vw;
-    bottom: 1vw;
-    font-size: 1.2vw;
-  }
+.success_msg {
+  display: block;
+  margin-top: 2vw;
+  padding: 15px 5px;
+  background-color: #54b757;
+  box-shadow: 5px 10px 18px #888888;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
 }
