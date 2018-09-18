@@ -3,7 +3,6 @@ $('img.nav__burger').click(function(){
   $('div.activ_nav').slideToggle(220);
 });
 
-
 //Validate form
 function validateForm() {
     var submit_btn = $('#submit');
@@ -107,6 +106,10 @@ function validateForm() {
           document.getElementById('msglabel').style.color = '#919191';
           msg.slideToggle(300);
         })
+        document.getElementById('ime').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById("checkbox").checked = false;
+        document.getElementById("poruka").value = "";
         return true;
       }
     })
