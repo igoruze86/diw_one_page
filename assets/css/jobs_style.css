@@ -164,6 +164,7 @@ header {
   }
 }
 
+
 #contact {
   display: inline-block;
   font-size: 1.5vw;
@@ -291,6 +292,7 @@ header {
 @media (min-width: 1800px) {
   .body_wrapper h3 {
     padding-bottom: 0.7vw;
+    font-size: 22px;
   }
 }
 
@@ -303,6 +305,11 @@ header {
 @media (max-width: 1024px) {
   .body_wrapper h1 {
     font-size: 7.1vw;
+  }
+}
+@media (min-width: 1800px) {
+  .body_wrapper h1 {
+    font-size: 45px;
   }
 }
 
@@ -337,6 +344,12 @@ header {
     padding-right: 1vw;
   }
 }
+@media (min-width: 1800px) {
+  .body_wrapper h2 {
+    font-size: 28px;
+    padding-right: 1vw;
+  }
+}
 
 .body_wrapper ul {
   padding-top: 2.4vw;
@@ -362,7 +375,7 @@ header {
     padding-top: 1.4vw;
     padding-left: 3.4vw;
     padding-bottom: 2.9vw;
-    font-size: 29px;
+    font-size: 24px;
   }
 }
 
@@ -394,6 +407,7 @@ header {
 @media (min-width: 1800px) {
   .body_wrapper p {
     line-height: 2;
+    font-size: 24px;
   }
 }
 
