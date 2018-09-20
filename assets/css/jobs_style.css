@@ -47,6 +47,7 @@ a, a:hover, a:focus, a:active {
 html, body{
   overflow-x: hidden;
   scroll-behavior: smooth;
+
 }
 
 header {
@@ -59,8 +60,8 @@ header {
 
 .banner {
   display: block;
-  max-height: 672px;
   overflow: hidden;
+  max-height: 672px;
 }
 @media (min-width: 1800px) {
   .banner {
@@ -75,7 +76,6 @@ header {
 @media (max-width: 768px) {
   .banner img {
     margin-top: 0;
-    height: 49vw;
   }
 }
 @media (min-width: 1800px) {
@@ -85,9 +85,9 @@ header {
 }
 
 .nav {
-  top: 5.9vw;
-  left: 5.4vw;
-  right: 5.1vw;
+  top: 5.6rem;
+  left: 5rem;
+  right: 5rem;
   position: absolute;
   z-index: 20;
 }
@@ -100,9 +100,9 @@ header {
 }
 @media (min-width: 1800px) {
   .nav {
-    top: 2.4vw;
-    left: 6.3vw;
-    right: 6.2vw;
+    top: 3.9rem;
+    left: 10rem;
+    right: 10rem;
   }
 }
 
@@ -115,7 +115,7 @@ header {
 
 .logo {
   display: inline-block;
-  width: 10.8vw;
+  width: 10.5rem;
 }
 @media (max-width: 1024px) {
   .logo {
@@ -125,8 +125,8 @@ header {
 
 .nav__menu {
   position: absolute;
-  right: 0.2vw;
-  top: 1vw;
+  right: 0;
+  top: 1rem;
 }
 @media (max-width: 1024px) {
   .nav__menu {
@@ -152,10 +152,10 @@ header {
 
 .nav__menu li {
   display: inline-block;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   letter-spacing: 0;
   cursor: pointer;
-  margin-left: 4.5vw;
+  margin-left: 4rem;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
@@ -164,13 +164,12 @@ header {
   }
 }
 
-
 #contact {
   display: inline-block;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   letter-spacing: 0;
-  cursor: auto;
-  margin-left: 4.3vw;
+  cursor: pointer;
+  margin-left: 4rem;
   font-weight: 900;
 }
 @media (max-width: 1024px) {
@@ -202,6 +201,7 @@ header {
     padding-bottom: 20vw;
   }
 }
+
 
 .activ_nav__item {
   display: none;
