@@ -89,7 +89,8 @@ header {
   .nav {
     left: 12.5vw;
     right: 16vw;
-    max-width: 1300px;
+    max-width: 1800px;
+    margin: 0 auto;
   }
 }
 

@@ -75,6 +75,7 @@ header {
 @media (max-width: 768px) {
   .banner img {
     margin-top: 0;
+    height: 49vw;
   }
 }
 @media (min-width: 1800px) {
@@ -84,9 +85,9 @@ header {
 }
 
 .nav {
-  top: 5.6rem;
-  left: 5rem;
-  right: 5rem;
+  top: 5.9vw;
+  left: 5.4vw;
+  right: 5.1vw;
   position: absolute;
   z-index: 20;
 }
@@ -99,9 +100,9 @@ header {
 }
 @media (min-width: 1800px) {
   .nav {
-    top: 3.9rem;
-    left: 10rem;
-    right: 10rem;
+    top: 2.4vw;
+    left: 6.3vw;
+    right: 6.2vw;
   }
 }
 
@@ -114,7 +115,7 @@ header {
 
 .logo {
   display: inline-block;
-  width: 10.5rem;
+  width: 10.8vw;
 }
 @media (max-width: 1024px) {
   .logo {
@@ -124,8 +125,8 @@ header {
 
 .nav__menu {
   position: absolute;
-  right: 0;
-  top: 1rem;
+  right: 0.2vw;
+  top: 1vw;
 }
 @media (max-width: 1024px) {
   .nav__menu {
@@ -151,10 +152,10 @@ header {
 
 .nav__menu li {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   letter-spacing: 0;
   cursor: pointer;
-  margin-left: 4rem;
+  margin-left: 4.5vw;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
@@ -165,10 +166,10 @@ header {
 
 #contact {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   letter-spacing: 0;
-  cursor: pointer;
-  margin-left: 4rem;
+  cursor: auto;
+  margin-left: 4.3vw;
   font-weight: 900;
 }
 @media (max-width: 1024px) {
@@ -200,7 +201,6 @@ header {
     padding-bottom: 20vw;
   }
 }
-
 
 .activ_nav__item {
   display: none;
@@ -253,33 +253,33 @@ header {
 .body_wrapper {
   text-align: left;
   width: 100%;
-  padding-left: 5rem;
-  padding-right: 5.5rem;
-  padding-top: 5.2rem;
-  padding-bottom: 7.4rem;
+  padding-left: 5.2vw;
+  padding-right: 6vw;
+  padding-top: 5.4vw;
+  padding-bottom: 7.6vw;
 }
 @media (max-width: 1024px) {
   .body_wrapper {
     padding-left: 9.5vw;
     padding-right: 9.5vw;
-    padding-top: 11vw;
+    padding-top: 9.7vw;
     padding-bottom: 12.4vw;
   }
 }
 @media (min-width: 1800px) {
   .body_wrapper {
-    padding-left: 10rem;
-    padding-right: 65rem;
-    padding-top: 6.8rem;
-    padding-bottom: 11.4rem;
+    padding-left: 6.2vw;
+    padding-right: 40vw;
+    padding-top: 4.3vw;
+    padding-bottom: 7vw;
   }
 }
 
 .body_wrapper h3 {
-  font-size: 1.7rem;
+  font-size: 27px;
   font-style: italic;
   color: #1C1C1C;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.9vw;
   letter-spacing: 0.4px;
 }
 @media (max-width: 1024px) {
@@ -288,9 +288,14 @@ header {
     padding-bottom: 1.8vw;
   }
 }
+@media (min-width: 1800px) {
+  .body_wrapper h3 {
+    padding-bottom: 0.7vw;
+  }
+}
 
 .body_wrapper h1 {
-  font-size: 3.3rem;
+  font-size: 53px;
   font-weight: 900;
   color: #1C1C1C;
   letter-spacing: 1.2px;
@@ -303,8 +308,8 @@ header {
 
 
 .red_dash {
-  padding-top: 1.2rem;
-  padding-bottom: 4.6rem;
+  padding-top: 1.3vw;
+  padding-bottom: 4.8vw;
   width: 47px;
 }
 @media (max-width: 1024px) {
@@ -315,13 +320,14 @@ header {
 }
 @media (min-width: 1800px) {
   .red_dash {
-    padding-top: 1.4rem;
-    padding-bottom: 4.4rem;
+    padding-top: 0.7vw;
+    padding-bottom: 2.8vw;
+
   }
 }
 
 .body_wrapper h2 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.3;
 }
@@ -333,11 +339,11 @@ header {
 }
 
 .body_wrapper ul {
-  padding-top: 2.4rem;
-  padding-left: 5.4rem;
-  padding-bottom: 4.9rem;
+  padding-top: 2.4vw;
+  padding-left: 5.6vw;
+  padding-bottom: 5vw;
   line-height: 1.8;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   color: #1C1C1C;
   list-style: disc;
   letter-spacing: -0.4px;
@@ -353,26 +359,27 @@ header {
 }
 @media (min-width: 1800px) {
   .body_wrapper ul {
-    padding-bottom: 4.7rem;
+    padding-top: 1.4vw;
+    padding-left: 3.4vw;
+    padding-bottom: 2.9vw;
+    font-size: 29px;
   }
 }
 
-#start_date {
-  display: none;
-}
-@media (max-width: 1024px) {
+
+@media (min-width: 1025px) {
   #start_date {
-    display: block;
+    display: none;
   }
 }
 
 .body_wrapper p {
-  font-size: 1.6rem;
+  font-size: 25.7px;
   color: #1C1C1C;
-  padding-top: 0rem;
+  margin-top: -0.2vw;
   letter-spacing: 1px;
-  padding-right: 4rem;
-  line-height: 1.9;
+  padding-right: 4vw;
+  line-height: 2;
 }
 @media (max-width: 1024px) {
   .body_wrapper p {
@@ -392,18 +399,18 @@ header {
 
 #italic {
   font-style: italic;
-  padding-top: 0.9rem;
-  padding-right: 2rem;
+  margin-top: 1vw;
+  padding-right: 3vw;
 }
 @media (max-width: 1024px) {
     #italic {
       padding-right: 0;
-      padding-top: 3.3vw;
+      margin-top: 3.3vw;
     }
 }
-@media (min-width; 1800px) {
+@media (min-width: 1800px) {
   #italic {
-    padding-top: 1.9rem;
+    margin-top: 0.8vw;
     line-height: 2;
   }
 }
@@ -421,8 +428,8 @@ header {
 
 .footer__container {
   position: absolute;
-  right: 5rem;
-  top: 3.3rem;
+  right: 5.2vw;
+  top: 3.4vw;
 }
 @media (max-width: 1024px) {
   .footer__container {
@@ -433,7 +440,8 @@ header {
 }
 @media (min-width: 1800px) {
   .footer__container {
-    right: 10rem;
+    top: 2vw;
+    right: 6.3vw;
   }
 }
 
@@ -443,7 +451,7 @@ header {
 
 .footer__container__linkedin_ico img {
   width: 23px;
-  margin-left: 1.3rem;
+  margin-left: 1.3vw;
 }
 @media (max-width: 1024px) {
   .footer__container__linkedin_ico img {
@@ -464,8 +472,8 @@ header {
   display: inline-block;
   color: #616161;
   letter-spacing: 1.2px;
-  font-size: 1.1rem;
-  margin-left: 8.4rem;
+  font-size: 1.15vw;
+  margin-left: 8.8vw;
 }
 @media (max-width: 1024px) {
   .footer__container__webpage {
@@ -476,14 +484,21 @@ header {
     font-size: 2.3vw;
   }
 }
+@media (min-width: 1800px) {
+  .footer__container__webpage {
+    font-size: 0.7vw;
+    margin-left: 5vw;
+  }
+}
+
 
 .div_copyright {
   display: block;
   background-color: #1e1e1e;
   color: #5f5f5f;
-  padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
-  padding-left: 5.1rem;
+  padding-top: 3.5vw;
+  padding-bottom: 3.5vw;
+  padding-left: 5.1vw;
 }
 @media (max-width: 1024px) {
   .div_copyright {
@@ -496,15 +511,16 @@ header {
 }
 @media (min-width: 1800px) {
   .div_copyright {
-    padding-left: 10.1rem;
+    padding-left: 6vw;
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
   }
 }
 
-
 .copyrigtxt2 {
   display: block;
-  font-size: 1rem;
-  letter-spacing: -0.5px;
+  font-size: 1.3vw;
+  letter-spacing: 0.1px;
   font-weight: 400;
 }
 @media (max-width: 1024px) {
@@ -514,6 +530,6 @@ header {
 }
 @media (min-width: 1800px) {
   .copyrigtxt2 {
-    font-size: 1.3rem;
+    font-size: 0.8vw;
   }
 }
